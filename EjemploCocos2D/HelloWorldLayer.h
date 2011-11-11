@@ -11,8 +11,10 @@
 #import "cocos2d.h"
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer
-{
+@interface HelloWorldLayer : CCLayer {
+
+    CCParticleMeteor *emisor; // Emisor de efecto.
+
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
