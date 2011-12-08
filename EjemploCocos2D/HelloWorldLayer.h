@@ -1,9 +1,9 @@
 //
 //  HelloWorldLayer.h
-//  EjemploCocos2D
+//  CocosEp2
 //
-//  Created by Juan Manuel Marchese on 02-11-11.
-//  Copyright JMM 2011. All rights reserved.
+//  Created by Víctor Baro on 11/11/11.
+//  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
 
@@ -12,8 +12,6 @@
 
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer {
-
-    CCParticleMeteor *emisor; // Emisor de efecto.
 
 }
 

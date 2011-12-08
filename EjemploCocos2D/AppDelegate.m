@@ -17,8 +17,8 @@
 
 @synthesize window;
 
-- (void) removeStartupFlicker
-{
+- (void) removeStartupFlicker {
+
 	//
 	// THIS CODE REMOVES THE STARTUP FLICKER
 	//
@@ -38,8 +38,9 @@
 	
 #endif // GAME_AUTOROTATION == kGameAutorotationUIViewController	
 }
-- (void) applicationDidFinishLaunching:(UIApplication*)application
-{
+
+- (void) applicationDidFinishLaunching:(UIApplication*)application {
+
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
@@ -108,11 +109,10 @@
 	
 	// Removes the startup flicker
 	[self removeStartupFlicker];
-	
+
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 	[[CCDirector sharedDirector] pause];
