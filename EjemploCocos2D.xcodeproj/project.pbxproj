@@ -124,6 +124,8 @@
 		1D8091831461B28F000F9451 /* Particula.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8091821461B28F000F9451 /* Particula.m */; };
 		1D87C78B146B4F93004D8D97 /* Pelota.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C78A146B4F93004D8D97 /* Pelota.png */; };
 		1D87C78E146B523F004D8D97 /* Particula.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D87C78D146B523F004D8D97 /* Particula.png */; };
+		1DA1D01C14911A0A009A3718 /* MiniJuego.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D01B14911A0A009A3718 /* MiniJuego.m */; };
+		1DA1D01F14911E56009A3718 /* personaje.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1D01E14911E56009A3718 /* personaje.png */; };
 		1DFC8AEF1490FBD800B88CB9 /* fondo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC8AEE1490FBD800B88CB9 /* fondo1.png */; };
 		1DFC8AF21490FBEC00B88CB9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC8AF11490FBEC00B88CB9 /* HelloWorldLayer.m */; };
 		1DFC8AF4149102B900B88CB9 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFC8AF3149102B900B88CB9 /* home.png */; };
@@ -367,6 +369,9 @@
 		1D8091841461B28F000F9451 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		1D87C78A146B4F93004D8D97 /* Pelota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pelota.png; sourceTree = "<group>"; };
 		1D87C78D146B523F004D8D97 /* Particula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particula.png; sourceTree = "<group>"; };
+		1DA1D01A14911A0A009A3718 /* MiniJuego.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniJuego.h; sourceTree = "<group>"; };
+		1DA1D01B14911A0A009A3718 /* MiniJuego.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniJuego.m; sourceTree = "<group>"; };
+		1DA1D01E14911E56009A3718 /* personaje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personaje.png; sourceTree = "<group>"; };
 		1DFC8AEE1490FBD800B88CB9 /* fondo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo1.png; sourceTree = "<group>"; };
 		1DFC8AF01490FBEC00B88CB9 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		1DFC8AF11490FBEC00B88CB9 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
@@ -427,16 +432,18 @@
 		1D8090291461B28D000F9451 /* EjemploCocos2D */ = {
 			isa = PBXGroup;
 			children = (
-				1DFC8AF01490FBEC00B88CB9 /* HelloWorldLayer.h */,
-				1DFC8AF11490FBEC00B88CB9 /* HelloWorldLayer.m */,
 				1D87C78A146B4F93004D8D97 /* Pelota.png */,
 				1D87C78D146B523F004D8D97 /* Particula.png */,
 				1D80917B1461B28F000F9451 /* AppDelegate.h */,
 				1D80917C1461B28F000F9451 /* AppDelegate.m */,
 				1D80917E1461B28F000F9451 /* RootViewController.h */,
 				1D80917F1461B28F000F9451 /* RootViewController.m */,
+				1DFC8AF01490FBEC00B88CB9 /* HelloWorldLayer.h */,
+				1DFC8AF11490FBEC00B88CB9 /* HelloWorldLayer.m */,
 				1D8091811461B28F000F9451 /* Particula.h */,
 				1D8091821461B28F000F9451 /* Particula.m */,
+				1DA1D01A14911A0A009A3718 /* MiniJuego.h */,
+				1DA1D01B14911A0A009A3718 /* MiniJuego.m */,
 				1D8091841461B28F000F9451 /* GameConfig.h */,
 				1D80902A1461B28D000F9451 /* Resources */,
 				1D80903E1461B28D000F9451 /* libs */,
@@ -448,6 +455,7 @@
 		1D80902A1461B28D000F9451 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DA1D01E14911E56009A3718 /* personaje.png */,
 				1DFC8AF3149102B900B88CB9 /* home.png */,
 				1DFC8AEE1490FBD800B88CB9 /* fondo1.png */,
 				1D80902B1461B28D000F9451 /* Default.png */,
@@ -839,6 +847,7 @@
 				1D87C78E146B523F004D8D97 /* Particula.png in Resources */,
 				1DFC8AEF1490FBD800B88CB9 /* fondo1.png in Resources */,
 				1DFC8AF4149102B900B88CB9 /* home.png in Resources */,
+				1DA1D01F14911E56009A3718 /* personaje.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +957,7 @@
 				1D8091801461B28F000F9451 /* RootViewController.m in Sources */,
 				1D8091831461B28F000F9451 /* Particula.m in Sources */,
 				1DFC8AF21490FBEC00B88CB9 /* HelloWorldLayer.m in Sources */,
+				1DA1D01C14911A0A009A3718 /* MiniJuego.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

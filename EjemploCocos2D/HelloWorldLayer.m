@@ -10,7 +10,7 @@
 // Import the interfaces
 #import "HelloWorldLayer.h"
 #import "Particula.h"
-// #import "Minijuego.h"
+#import "MiniJuego.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -34,7 +34,7 @@
 }
 
 - (void) loadMiniJuego{
-    // [[CCDirector sharedDirector]replaceScene:[CCTransitionRadialCCW transitionWithDuration:2 scene:[Minijuego node]]];
+    [[CCDirector sharedDirector]replaceScene:[CCTransitionRadialCCW transitionWithDuration:0.5 scene:[MiniJuego node]]];
 }
 
 - (void) loadFisicas {
@@ -58,12 +58,13 @@
         // Por si queremos crear menús a partir de imágenes
         //CCMenuItemImage *menu1 = [CCMenuItemImage itemFromNormalImage:@"icon.png" selectedImage:@"icon.png" target:self selector:@selector(loadParticles)];
 
-        CCMenuItemFont *menu1 = [CCMenuItemFont itemFromString:@"Paricula" target:self selector:@selector(loadParticles)];
+        CCMenuItemFont *menu1 = [CCMenuItemFont itemFromString:@"Partícula" target:self selector:@selector(loadParticles)];
         //Por si queremos cambiarle el color a las fuentes del texto
         //menu1.color = ccc3(0, 0, 0); 
-        CCMenuItemFont *menu2 = [CCMenuItemFont itemFromString:@"Juego1" target:self selector:@selector(loadMiniJuego)];
+        CCMenuItemFont *menu2 = [CCMenuItemFont itemFromString:@"Mini Juego" target:self selector:@selector(loadMiniJuego)];
         CCMenuItemFont *menu3 = [CCMenuItemFont itemFromString:@"Físicas" target:self selector:@selector(loadFisicas)];
 
+        // Arma el menú a partir de cada uno de los items creados antes.
         CCMenu *menu = [CCMenu menuWithItems:menu1, menu2, menu3, nil];
         menu.position = ccp(windowSize.width/2, windowSize.height/2);
         [menu alignItemsVerticallyWithPadding:30]; // Alineación vertical y separación entre cada item.
